@@ -18,12 +18,20 @@
       // break between them
 
       // 1. create an array of four animals
+      const animals = ['tiger', 'monkey', 'elephant', 'zebra'];
+
       // 2. create a variable without a value called text
+      let text = '';
 
       // 3. create a for loop where you iterate through your array
       // 4. every loop, the animal and a line break html element should be added to our text variable
+      for (let i = 0; i < animals.length; i++) {
+        text += animals[i] + '<br>';
+      }
+
       // 5. update the demo paragraph to display this text, you may need to look at this resource:
       // https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+      document.getElementById('demo').innerHTML = text;
     </script>
   </body>
 </html>
